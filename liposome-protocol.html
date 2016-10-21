@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Liposomes: Protocol</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/tile.png">
+    <style>
+        table.info {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td.info, th.info {
+            border: 1px solid #ffeecc;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr.info:nth-child(even) {
+            background-color: #ffeecc;
+        }
+    </style>
+    <style>
+        ul.rover{
+            list-style: square inside url("images/ico/tile_bullet.png");
+        }
+
+    </style>
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="idea.html">Idea</a></li>
+                        <li class="dropdown"><a href="approach.html">Approach<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a class="active" href="approach.html">Overview</a></li>
+                                <li><a href="origami-approach.html">Origami Design</a></li>
+                                <li><a href="beads-approach.html">Dyna Beads Setup</a></li>
+                                <li><a href="liposome-approach.html">Liposome Preparation</a></li>
+                                <li><a href="conjugation-approach.html">Nanorover Assembly</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="results.html">Results</a></li>
+                        <li class="dropdown active"><a>Materials &amp; Methods<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a href="origami-protocol.html">DNA Origami</a></li>
+                                <li><a href="beads-protocol.html">Dyna Beads</a></li>
+                                <li class="active"><a href="liposome-protocol.html">Liposomes</a></li>
+                                <li><a href="assembly-protocol.html">Nanorover Assembly</a></li>
+                                <li><a href="equipment.html">Equipment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Team</a></li>
+                        <li><a href="outreach.html">Gallery</a></li>
+                        <li><a href="sponsors.html ">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row text-center">
+                    <h1><b>Liposomes Protocols</b></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#page-breadcrumb-->
+                  
+    <section id="blog-details" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-7">
+                    <h2><b>Table of contents:</b></h2>
+                    <ul>
+                        <li><a href="#1"><b>1 Assembly</b></a>
+                            <ul>
+                                <li><a href="#1.1">1.1 GUVs (Giant Unilamellar Vesicles)</a></li>
+                                <li><a href="#1.2">1.2 LUVs (Large Unilamellar Vesicles)</a> </li>
+                                <li><a href="#1.3">1.3 Peptide Synthesis</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="#2"><b>2 Purification Techniques</b></a></li>
+                        <li><a href="#3"><b>3 Modifications</b></a>  
+                            <ul>
+                                <li><a href="#3.1">3.1 Biotinylation of Liposomes</li>
+                                <li><a href="#3.2">3.2 DiI staining of Liposomes</a> </li>
+                                <li><a href="#3.3">3.3 DNA Encapsulation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#4"><b>4 Measurements &amp; Imaging</b></a>
+                            <ul>
+                                <li><a href="#4.1">4.1 DLS (Dynamic Light Scattering)</a></li>
+                                <li><a href="#4.2">4.2 UV vis</a> </li>
+                                <li><a href="#4.3">4.3 Wide-field Microscopy</a></li>
+                                <li><a href="#4.4">4.4 STORM (Stochastic Optical Reconstruction Microscopy)</a></li>
+                                <li><a href="#4.5">4.5 Cryo-TEM (Cryo-Transmission Electron Microscopy )</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#5"><b>5 Bursting &amp; Uptake of the Liposomes</b></a>
+                            <ul>
+                                <li><a href="#5.1">5.1 Molar ratios for bursting</a></li>
+                                <li><a href="#5.2">5.2 Molar ratios for uptake</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#6"><b>6 Buffers &amp; Media</b></a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="post-content overflow">
+                        <h1 id = "1" ><b>1 Assembly of liposomes</b></h1>
+                        <h2 id= "1.1"><b>1.1 GUVs (Giant Unilamellar Vesicles):</b></h2>
+                        <p>
+                            <h2>Materials:</h2>
+                            <ul class = "rover">
+                                <li><a href="https://avantilipids.com/product/850375/">1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC)</a> 25 mg/mL</li> 
+                                <li><a href="https://avantilipids.com/product/870282/">Biotinylated DPPE (1,2 Dipalmitoyl-sn-Glycero-3-Phosphoethanolamine-N-(CapBiotinyl)(Sodium Salt)) 25 mg/mL</a></li>
+                                <li><a href="https://www.thermofisher.com/order/catalog/product/D282">2:1 Chloro-methanol DiI (1,1'-Dioctadecyl-3,3,3',3'-Tetramethylindocarbocyanine Perchlorate ('DiI'; DiIC18(3)))</a> (25 mg/mL) </li>
+                                <li>Bovine Serum Albumin (BSA) 1 mg/mL</li>
+                                <li>Electroformation vials</li>
+                                <li>50 % Ethanol</li>
+                                <li>MilliQ water</li>
+                                <li>Methanol</li>
+                                <li>Chloroform</li>
+                                <li>1x Phosphate-buffered saline (PBS)</li>
+                                <li>Chambers and Platinum caps</li>
+                                <li>8-well Microscopy chamber</li>
+                                <li>Polypropylene vials</li>
+                                <li>300 mM sucrose solution</li>
+                            </ul>
+                            
+                            <h2>Procedure:</h2>
+                            <ol type="a">
+                                <li> Cleaning the Electroformation Vials
+                                    <ul class = "rover">
+                                        <li>Sonicate vials and Platinum caps in 50% ethanol for 20 minutes</li>
+                                        <li>Rinse the chambers with methanol and followed by rinse with chloroform</li>
+                                        <li>Dry completely</li>
+                                    </ul>
+                                </li> 
+                                <br>
+                                <li>Lipid Mixture and Electroformation 
+                                <br>
+                                <table class="info" style="width:40%">
+                                    <tr class="info">
+                                        <th class="info">Component</th>
+                                        <th class="info">Volume (μL)</th>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">DOPC (25 mg/mL)</td>
+                                        <td class="info">3.8</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Biotin (25 mg/mL)</td>
+                                        <td class="info">2 (1:10 dilution)</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">2:1 Chloro-methanol</td>
+                                        <td class="info">90</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">DiI (25 mg/mL)</td>
+                                        <td class="info">4</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <ul class = "rover">
+                                    <li>Prepare 1 mg/ml lipids mixture in a polypropylene vial. Prepare 5% biotin solution by 1:10 dilution in 2:1 chloro-methanol solvent.</li>
+                                    <li>Spread 5 μL of lipid mixture on different platinum wires. Slowly pipette the lipid on the wires to make an even layer.</li>
+                                    <li>Evaporate chloroform completely: place the platinum wires in vacuum chamber for ~10 minutes</li>
+                                    <li>Fill the chambers with 350 μL sucrose solution</li>
+                                    <li>Insert the platinum wires into the chambers and seal the chambers with electrical tape</li>
+                                    <li>Place the chambers in heat block and set the temperature to 68°C </li>
+                                    <li>Start the alternating current: 10 Hertz, 2 volts for 2 hours</li>
+                                    <li>Decrease the current to 2 Hertz for 30 minutes</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <hr><!--end of guvs-->
+                        <h2 id= "1.2"><b>1.2 LUVs (Large Unilamellar Vesicles):</b></h2>
+                        
+                            <h2>Materials:</h2>
+                            <ul class = "rover">
+                                <li><a href="https://avantilipids.com/product/850375/">1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC)</a> 25 mg/mL</li> 
+                                <li><a href="https://avantilipids.com/product/870282/">Biotinylated DPPE (1,2 Dipalmitoyl-sn-Glycero-3-Phosphoethanolamine-N-(CapBiotinyl)(Sodium Salt)) 25 mg/mL</a></li>
+                                <li><a href="https://www.thermofisher.com/order/catalog/product/D282">2:1 Chloro-methanol DiI (1,1'-Dioctadecyl-3,3,3',3'-Tetramethylindocarbocyanine Perchlorate ('DiI'; DiIC18(3)))</a> (25 mg/mL) </li>
+                                <li>Cryo-vial</li>
+                                <li>Glass pipette tips</li>
+                                <li>Argon or nitrogen gas</li>
+                                <li>Liquid nitrogen</li>
+                                <li>Vacuum oven</li>
+                                <li>2 Hamilton Syringes (1 mL)</li>
+                                <li>1x PBS buffer</li>
+                                <li>Sonicator</li>
+                                <li>Beaker 50 mL</li>
+                                <li>Extrusion kit </li>
+                                <li>Filter supports</li>
+                                <li>200 nm polycarbonate membrane</li>
+                                <li>70% Ethanol</li>
+                            </ul>
+                            
+                            <h2>Procedure:</h2>
+                            <ol type="a">
+                                    <li>Formation of multi-lamellar vesicles
+                                        <ul class = "rover">
+                                            <li>Using a glass pipette tip, pipette 1 mg/mL of 10 mg/mL of DOPC into a cryo-vial </li>
+                                            <li>With a gentle flow of argon or nitrogen gas, evaporate the chloroform carefully </li>
+                                            <li>Place the vial in a vacuum oven at room temperature. Dry for 10-15 minutes</li>
+                                            <li>Hydrate the lipid film with 1x PBS to form multi-lamellar vesicles</li>
+                                        </ul>
+                                    </li> 
+                                    <li>Formation of LUVs
+                                        <ul class = "rover">
+                                            <li><b>Freeze and thaw:</b> (Repeat 3 times) Sonicate the solution for ~5 minutes and freeze in liquid nitrogen. </li>
+                                            <li><b>Extrusion:</b>Put together the extrusion kit (Avanti lipids) using a 200 nm polycarbonate membrane </li>
+                                            <li>Push the PBS through the extruder into a waste beaker using a Hamilton syringe</li>
+                                            <li>Add the second syringe on the other side of the extruder and perform extrusion.(21 times) </li>
+                                            <li>Carefully push the liposomes into a fresh Eppendorf tube and Store at 4°C</li>
+                                        </ul>
+                                    </li> 
+                        </ol>
+                        <hr><!--end of luvs-->
+                        <h2 id= "1.3"><b>1.3 Peptide Synthesis:</b></h2>
+                            <h2>Materials:</h2>
+                            <ul class = "rover">
+                                <li>Reactive amino group with 9-fluorenylmethoxycarbonyl (Fmoc)</li>
+                                <li>2-(1H-benzotriazol-1-yl)-1,1,3,3-tetramethyluronoium hexafluorphosphate (HBTU)</li>
+                                <li>Acetic Anhydride</li>
+                                <li>O-(7-Azabenzotriazol-1-yl)-N,N,N′,N′-tetramethyluronium-hexafluorphosphat (HATU)</li>
+                                <li>1-Hydroxy-7-azabenzotriazol (HOAT)</li>
+                                <li>Diisopropylethylamin (DIPEA)</li>
+                                <li>TFA/TIS/water/DTT (90v/v):5(v/v):2.5(v/v):2.5(m/v))</li>
+                                <li>Milli-Q water/acetonitrile (1:1)</li>
+                                <li>Automated solid-phase peptide synthesizer (ResPep SL, Intavis)</li>
+                            </ul>
+                            
+                            <h2>Procedure:</h2>
+                            <ol type="a">
+                                    <li>Synthesis
+                                        <br>
+                                        <table class="info" style="width:40%">
+                                            <tr class="info">
+                                                <th class="info">Peptides</th>
+                                                <th class="info">Sequences</th>
+                                            </tr>
+                                            <tr class="info">
+                                                <td class="info">Poly-Arginine (PolyR)</td>
+                                                <td class="info">RRRRRRRRR</td>
+                                            </tr>
+                                            <tr class="info">
+                                                <td class="info">Transportan (Trans)</td>
+                                                <td class="info">GWTCNSAGYLLGKINLKALAALAKKIL</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <ul class = "rover">
+                                            <li>Prepare peptide sequences using standard Fmoc chemistry on a solid-phase with HBTU activation on an automated solid-phase peptide synthesizer</li>
+                                            <li>Couple each amino acid twice with 5-fold excess for good quality</li>
+                                            <li>Cap all non-reacted amino acids with acetic anhydride</li>
+                                        </ul>
+                                    </li> 
+                                    <li>Biotinylation
+                                        <ul class = "rover">
+                                            <li>After the final cycle, biotintylation of the resin bound peptides can be conducted via HATU, HOAT, and DIPEA mediated coupling</li>
+                                            <li>Cleave the biotinylated peptides from the resin with TFA/TIS/water/DTT (90v/v):5(v/v):2.5(v/v):2.5(m/v)) for 2 hours</li>
+                                            <li>After final peptide precipitation, wash with ice-cold diethyl ether</li>
+                                        </ul>
+                                    </li> 
+                                    <li>Purification of the peptides
+                                        <ul class="rover">
+                                            <li>Solve precipitated peptide in MilliQ water/acetonitrile (1:1)</li>
+                                            <li>Purification: reverse-phase high pressure liquid chromatography (HPLC) on a Semi-preparative HPLC with C18 column</li>
+                                            <li>During purification, the peptide will attach to the solid phase of the column and is eluted by the mobile phase over 25 min at 4mL/min according to its hydrophobic profile </li>
+                                        </ul>
+                                    </li>
+                                    <li>Sample Analysis
+                                        <ul class="rover">
+                                            <li>The mobile phase is represented by a gradient of 0.1% TFA in water (100% to 5%) and 0.1% TFA in acetonitrile (5% to 100%) </li>
+                                            <li>The fraction containing the product can be identified using UV detector at 220 nm</li>
+                                            <li>Further analysis: analytical reverse phase Ultra-high Pressure Liquid Chromatography (UPLC) with UV detector and analytical C18 column </li>
+                                            <li>Sequence specificity can be confirmed on the base of the molecular weight</li>
+                                            <li>The fraction containing the product was lyophilized and stored at -20°C</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <hr><!--end of peptide synthesis-->
+                                <h1 id = "2" ><b>2 Purification Techniques</b></h1>
+                                <h2><b>Purification of DNA-Encapsulated liposomes using dialysis</b></h2>
+                                    <h2>Materials:</h2>
+                                    <ul class = "rover">
+                                        <li>10 kDa membrane filtration tube</li>
+                                    </ul>
+                            
+                                   <h2>Procedure:</h2>
+                                    <ul>
+                                        <li> Dialysis: High encapsulation frequency of the DNA inside the vesicles was obtained by performing rotatory filtration dialysis
+                                            <ul class = "rover">
+                                                <li>Membrane filtration tube of pore size 10 kDa was used to filter ssDNA (MW: 9,864 Da)</li>
+                                                <li>Suspend 100 μL of sample in the suspended media (PBS) with the surface of the filtration tube touching the meniscus</li>
+                                                <li>Mix the sample with magnetic stirrer at 400 rpm</li>
+                                                <li>Change the buffer every 4 hours</li>
+                                                <li>Repeat the cycle 6 times</li>
+                                            </ul>
+                                        </li>   
+                                    </ul>                      
+                                <hr><!--end of peptide synthesis-->
+                                <h1 id = "3" ><b>3 Modifications</b></h1>
+                                <h2 id = "3.1"><b>3.1 Biotinylation of liposomes</b></h2>
+                                    <h2>Materials:</h2>
+                                    <ul class = "rover">
+                                        <li><a href="https://avantilipids.com/product/870282/">Biotinylated DPPE (1,2 Dipalmitoyl-sn-Glycero-3-Phosphoethanolamine-N-(CapBiotinyl)(Sodium Salt))</a> 25 mg/mL</li>
+                                    </ul>
+                            
+                                   <h2>Procedure:</h2>
+                                    <ul>
+                                        <li> Calculate the volume of both biotinylated lipids and DOPC needed to synthesize 2 mg/mL lipids in 1 mL </li>
+                                        <li>Follow the same method previously described for GUV and LUV synthesis </li>   
+                                    </ul>                      
+                                <hr><!--end of biotinylation-->
+                                <h2 id = "3.2"><b>3.2 DiI staining of liposomes</b></h2>
+                                    <h2>Materials:</h2>
+                                    <ul class = "rover">
+                                        <li><a href="https://www.thermofisher.com/order/catalog/product/D282">2:1 Chloro-methanol DiI (1,1'-Dioctadecyl-3,3,3',3'-Tetramethylindocarbocyanine Perchlorate ('DiI'; DiIC18(3)))</a> (25 mg/mL) </li>
+                                    </ul>
+                            
+                                   <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li> Incorporate 25 μM of DiI stain in with both the biotinylated lipids and DOPC for a final concentration of 2 mg/ml in 1mL</li>
+                                        <li>Follow the same method previously described of GUV and LUV synthesis</li>
+                                    </ol>                      
+                                <hr><!--end of DiI-->
+                                <h2 id = "3.3"><b>3.3 DNA encapsulation in Liposomes</b></h2>
+                                    <h2>Materials:</h2>
+                                    <ul class = "rover">
+                                        <li>100 μM of ssDNA</li>
+                                    </ul>
+                            
+                                   <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li>Add 1 μL of 100 μM single-stranded DNA to 40 μL of 25 mg/mL DOPC</li>
+                                        <li>Add 458 μL of PBS to create a final volume of 500 μL </li>
+                                        <li>Follow the same method previously described for LUV synthesis</li>
+                                    </ol>                      
+                                <hr><!--end of dna encap-->
+                                <br>
+                                <h1 id = "4" ><b>4 Measurements and Imaging</b></h1>
+                                <h2 id="4.1"><b>4.1 DLS</b></h2>
+                                    <ol type="a">
+                                        <li> Set the Malvern Zetasizer Nano Software to include sample parameters such as PBS buffer and refractive index of the different lipids</li>
+                                        <li>Create a 2:100 dilution of liposomes and PBS by adding  2 μL of the liposomes to 98 μL of PBS</li>
+                                        <li>Add 60 μL of the diluted sample to a Malvern Instruments low-volume quartz batch cuvette </li>
+                                        <li>Place the cuvette in the sample holder and close the lid</li>
+                                        <li>Label the sample file and click measure </li>
+                                        <li>Make sure the sample equilibrates and temperature is constant at 25°C</li>
+                                    </ol>                      
+                                <hr><!--end of dls-->
+                                <h2 id = "4.2"><b>4.2 UV vis</b></h2>
+                                    <ol type = "a">
+                                        <li>Set the wavelength measurements to 260nm for nucleic acid absorption and 280nm for protein absorption (due to Tryptophan)</li>
+                                        <li>Place 1.2 μL of clean milliQ water and measure the blank</li>
+                                        <li>Place 1.2 μL of an undiluted sample of DNA encapsulated dialyzed liposomes </li>
+                                        <li>Measure and record the absorbance values at 260nm and 280nm</li>
+                                        <li>Wipe both the upper and lower optical surfaces with a Kimwipe</li>
+                                    </ol>                   
+                                <hr><!--end of uv-->
+                                <h2 id = "4.3"><b>4.3 Wide-field Microscopy of GUVs</b></h2>
+                                    <ol class = "rover">
+                                        <li>Fill the wells of microscopy chambers with 300 μL BSA (1 mg/mL) and wait for 1 hour for complete coating</li>
+                                        <li>Wash 5-10 times with distilled/sterilized water </li>
+                                        <li>Add 150 μL of GUV suspension to the wells</li>
+                                        <li>Add 200 μL of PBS onto GUV suspension in the wells and mix the solution gently.</li>
+                                        <li>Using Wide-Field Microscopy, set the magnification to 40x, excitation to 530 nm (green light), emission to 570 nm (yellow light)</li>
+                                    </ol>     
+                                <hr><!--end of dna encap-->
+                                <h2 id = "4.4"><b>4.4 STORM imaging of LUVs stained with DiI</b></h2>
+                                    <ol class = "rover">
+                                        <li>Prepare 5 wells of PEGylated chambers on a glass slide and store in the fridge until the samples are ready</li>
+                                        <li>Wash the chambers with neutravidin for surface immobilization of the sample </li>
+                                        <li>Dilute the samples to 100 pM and flush the chamber with 20 μL</li>
+                                        <li>Pat the other end of the chamber with a Kimwipe™ to avoid spilling every time flushing occurs</li>
+                                        <li>Flush the chamber with 20 μL PBS once</li>
+                                        <li>Repeat for each sample</li>
+                                        <li>Place the slide on the stage of the microscope and If the images demonstrate that the sample is too concentrated, flush with PBS once more</li>
+
+                                    </ol>     
+                                <hr><!--end of dna encap-->
+                                <h2 id = "4.5"><b>4.5 Cryo-TEM</b></h2>
+                                    <ol type = "a">
+                                        <li>2µl of sample in 1x FB was deposited on a holey carbon support film attached to a copper grid.</li>
+                                        <li>After rapid freezing, the sample was loaded to a Gatan cryo transfer holder at -130°C to prevent ice crystallization.</li>
+                                    </ol>     
+                                <hr><!--end of dna encap-->
+                                
+                                <h1 id = "5" ><b>5 Bursting of liposomes and uptake </b></h1>
+                                <h2 id="5.1"><b>5.1 Bursting</b></h2>
+                                    <ol type="a">
+                                        <li> </li>
+                                    </ol>                      
+                                <hr><!--end of dls-->
+                                <h2 id = "5.2"><b>5.2 Uptake</b></h2>
+                                    <ol type = "a">
+                                        <li></li>
+                                    </ol>                   
+                                <hr><!--end of uv-->
+                                
+                                    <br>
+
+
+
+                            </p>
+                    </div>
+                </div> 
+
+            </div>
+
+
+
+
+                                
+        </div>
+                            
+    </section>
+    <!--/#blog-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center" style="color: black;">
+                <table align="center">
+                <tr>
+                    <td> <img src="images/home/robotito.png"> </td>
+                    <td>  <h3>&copy; I,Nanobot 2016. All Rights Reserved Created by team I,Nanobot TU Dresden </h3> 
+                    <a href="https://www.facebook.com/teaminanobot"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/inanobot2016"><i class="fa fa-twitter"></i></a>                       
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

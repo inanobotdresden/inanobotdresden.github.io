@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Nanorover: Protocol</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/tile.png">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #ffeecc;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffeecc;
+        }
+    </style>
+    <style>
+        ul.rover{
+            list-style: square inside url("images/ico/tile_bullet.png");
+        }
+
+    </style>
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="idea.html">Idea</a></li>
+                        <li class="dropdown"><a href="approach.html">Approach<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a class="active" href="approach.html">Overview</a></li>
+                                <li><a href="origami-approach.html">Origami Design</a></li>
+                                <li><a href="beads-approach.html">Dyna Beads Setup</a></li>
+                                <li><a href="liposome-approach.html">Liposome Preparation</a></li>
+                                <li><a href="conjugation-approach.html">Nanorover Assembly</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="results.html">Results</a></li>
+                        <li class="dropdown active"><a>Materials &amp; Methods<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a href="origami-protocol.html">DNA Origami</a></li>
+                                <li><a href="beads-protocol.html">Dyna Beads</a></li>
+                                <li class="active"><a href="liposome-protocol.html">Liposomes</a></li>
+                                <li><a href="assembly-protocol.html">Nanorover Assembly</a></li>
+                                <li><a href="equipment.html">Equipment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Team</a></li>
+                        <li><a href="outreach.html">Gallery</a></li>
+                        <li><a href="sponsors.html ">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row text-center">
+                    <h1><b>Liposomes Protocols</b></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#page-breadcrumb-->
+                  
+    <section id="blog-details" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-7">
+                    <h2><b>Table of contents:</b></h2>
+                        <ul>
+                            <li><a href="#1"><b>1 Assembly</b></a>
+                                <ul>
+                                    <li><a href="#1.1">1.1 GUVs (Giant Unilamellar Vesicles)</a></li>
+                                    <li><a href="#1.2">1.2 LUVs (Large Unilamellar Vesicles)</a> </li>
+                                    <li><a href="#1.3">1.3 Peptide Synthesis</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#2"><b>2 Purification Techniques</b></a></li>
+                            <li><a href="#3"><b>3 Modifications</b></a>  
+                                <ul>
+                                    <li><a href="#3.1">3.1 Biotinylation of Liposomes</li>
+                                    <li><a href="#3.2">3.2 DiI staining of liposomes</a> </li>
+                                    <li><a href="#3.3">3.3 DNA Encapsulation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#4"><b>4 Measurements &amp; Imaging</b></a>
+                                <ul>
+                                    <li><a href="#4.1">4.1 DLS (Dynamic Light Scattering)</a></li>
+                                    <li><a href="#4.2">4.2 UV vis</a> </li>
+                                    <li><a href="#4.3">4.3 Confocal Microscopy</a></li>
+                                    <li><a href="#4.4">4.4 SEM (Scanning Electon Microscopy)</a></li>
+                                    <li><a href="#4.5">4.5 STORM (Stochastic Optical Reconstruction Microscopy)</a></li>
+                                    <li><a href="#4.6">4.6 Cryo-TEM (Cryo-Transmission Electron Microscopy )</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#5"><b>5 Bursting &amp; Uptake of the liposomes</b></a>
+                                <ul>
+                                    <li><a href="#5.1">5.1 Molar ratios for bursting</a></li>
+                                    <li><a href="#5.2">5.2 Molar ratios for uptake</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#6"><b>6 Buffers &amp; Media</b></a>                            
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div id = "1" class="post-content overflow">
+                            <h1><b>Liposome Synthesis</b></h1>
+                                    <h1><b>Liposome Synthesis</b></h1>
+                                    <h3 class="post-author"><a href="#">Last updated 25.09.16</a></h3>
+                                    <h1>Materials needed:</h1>
+                                    <p>
+                                        <ul class = "rover">
+                                            <li> Cryo-vial </li>
+                                            <li> Glass pipette tips</li>
+                                            <li> Argon or nitrogen gas</li>
+                                            <li> Lipid 1: DOPC (1,2-dioleoyl-sn-glycero-3-phosphocholine)</li>
+                                            <li> Lipid 2: biotinylated DPPE (1,2 Dipalmitoyl-sn-Glycero-3-Phosphoethanolamine-N-(CapBiotinyl)(Sodium Salt)) </li>
+                                            <li> Liquid nitrogen</li>
+                                            <li> Vacuum oven</li>
+                                            <li> Syringes (1.5 ml)</li>
+                                            <li> Suitable buffer (1x PBS)</li>
+                                            <li> Sonicator</li>
+                                            <li> Extrusion kit (polycarbonate membrane, filter supports)</li>
+                                            <li> 70% Ethanol</li>
+                                        </ul>
+                                    </p>
+                                    <h1>Procedure:</h1>
+                                    <p>
+                                    <ol>
+                                        <li> Take 1 mg/ml of 10 mg/ml of DOPC into a cryo-vial (safe for liquid nitrogen) with the help of a glass pipette tip (due to presence of chloroform). (A regular pipette tip can also be used with a quick motion)</li>
+                                        <li> For evaporation of chloroform, use a very gentle flow of argon gas (if not available, use nitrogen gas). With the help of a nozzle, rotate the vial continuously to get a homogeneous layer of lipids (lipid cake)</li>
+                                        <li> Oxygen should not be used to dry in case of unsaturated chains as they might get hydrolyzed.</li>
+                                        <li> Add the vial to a vacuum oven at room temperature and leave it for 10-15 minutes</li>
+                                        <li> Fill the small can with liquid nitrogen till the top</li>
+                                        <li> Get 1.5 ml of buffer so that the concentration would become 2 mg/ml. Normally he uses 5 mg/ml</li>
+                                        <li> Sonicate the solution for ~5 minutes, freeze and sonicate again 3 times</li>
+                                        <li> In the meantime, put together the extrusion kit (Avanti lipids Fig 1):
+
+                                        <ul class = "rover">
+                                            <li> Put 2 filter supports (wet them so they stick together) on each side of the extrusion set</li>
+                                            <li> Use Avastin polycarbonate membrane and place between the 4 filter supports</li>
+                                            <li> Fit the two parts together with the protector ring and don’t close too tightly</li>
+                                        </ul>
+                                        </li>
+                                    <img src="images\protocols\extruder.png" height="250" width="600"><br>
+                                        <li> Take the two 1 ml syringes (one for up and one for down). Pull the buffer in one,  and remove all air bubbles</li>
+                                        <li> Fit the two syringes on either side and push the buffer out from one side so that it fills into the other syringe. Remove bubbles from the second syringe and repeat. Check for leaks</li>
+                                        <li> Now discard the buffer and take the lipid solution repeat  20+1 times to get the vesicles into the second syringe</li>
+                                        <li> Store in fridge</li>
+                                        <li> Put the remaining liquid nitrogen into the container</li>
+                                        <li> Syringe: fill and clean with ethanol 3 times</li>
+                                        <li> Clean with water</li>
+                                        <li> Blow dry them with nitrogen</li>
+                                    </ol>
+                                </p>
+
+                                <h1>Results:</h1>
+                                <p>
+                                    Vesicles were obtained with the sizes 198-189 nm as measured with the DLS (Dynamic Light Scattering) 
+                                </p>
+                                </div>
+
+                                <div class="post-thumb">
+                                    <a href="#"><img src="images/blog/7.jpg" class="img-responsive" alt=""></a>
+                                    <div class="post-overlay">
+                                        <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
+                                    </div>
+                                </div>
+                                <div id = "bursting" class="post-content overflow">
+                                    <h1><b>Liposome Bursting</b></h1>
+                                    <h3 class="post-author"><a href="#">Last updated 25.09.16</a></h3>
+                                    
+                                    <h1>Materials needed:</h1>
+                                    <ul class="rover">
+                                        <li>Liposomes</li> 
+                                        <li>Quantum Dots</li> 
+                                        <li>Peptides (Poly-R)</li>
+                                    </ul>
+                                <h1>Procedure:</h1>
+                                Initial concentration of liposomes = 5.1 mM<br>
+                                Initial concentration of QD = 100 nM<br>
+                                Initial concentration of peptides  (poly R) = 1500 μM<br>
+                                Prepare a stock concentration of peptides with 8000 nM in 1 ml for further dilution: 5.3 μl in 994.7 μl 1xPBS<br>
+
+                                <table id="t01">
+                                  <tr>
+                                    <th>Volumes of QD and peptides in 1 ml</th>
+                                    <th>40 nM QD + 800 nM peptides</th>
+                                    <th>20 nM QD + 400 nM peptides</th>
+                                    <th>10 nM QD + 200 nM peptides</th>
+                                    <th>5 nM QD + 100 nM peptides</th>
+                                    <th>2.5 nM QD + 50 nM peptides</th>
+                                    <th>1.25 nM QD + 25 nM peptides</th>
+                                    <th>0.6 nM QD + 12.5 nM peptides</th>
+                                  </tr>
+                                  <tr>
+                                    <td>QD</td>
+                                    <td>40 μl</td>
+                                    <td>20 μl</td>
+                                    <td>10 μl</td>
+                                    <td>5 μl</td>
+                                    <td>2.5 μl</td>
+                                    <td>1.25 μl</td>
+                                    <td>0.6 μl</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Peptides</td>
+                                    <td>100 μl</td>
+                                    <td>50 μl</td>
+                                    <td>25 μl</td>
+                                    <td>12.5 μl</td>
+                                    <td>6.25 μl</td>
+                                    <td>3.125 μl</td>
+                                    <td>1.56 μl</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1xPBS</td>
+                                    <td>835 μl</td>
+                                    <td>905 μl</td>
+                                    <td>940 μl</td>
+                                    <td>957.5 μl</td>
+                                    <td>966.25 μl</td>
+                                    <td>970.625 μl</td>
+                                    <td>972.84 μl</td>
+                                  </tr>
+                                </table><br>
+                                <ol>
+                                    <li> Incubate these for 1 hour in 4 Degrees fridge for 1 hour before adding liposomes</li>
+                                    <li> After incubation,  add 5.1/40 mM of vesicles in 1 ml (25 μl) in all tubes </li>
+                                    <li> Measure DLS for 20 nM QD in 1 ml (Blank: 20 μl in 980 μl 1xPBS )</li>
+                                    <li>Measure DLS for liposomes (dunno what is normal concentration for blank)</li>
+                                    <li>Measure DLS for all other tubes</li>
+                                </ol>
+                        </p>
+
+                                  
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!--/#blog-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center" style="color: black;">
+                <table align="center">
+                <tr>
+                    <td> <img src="images/home/robotito.png"> </td>
+                    <td>  <h3>&copy; I,Nanobot 2016. All Rights Reserved Created by team I,Nanobot TU Dresden </h3> 
+                    <a href="https://www.facebook.com/teaminanobot"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/inanobot2016"><i class="fa fa-twitter"></i></a>                       
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

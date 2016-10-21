@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Imaging | I, Nanobot</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/tile.png">
+    <style>
+        table.info {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td.info, th.info {
+            border: 1px solid #ffeecc;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr.info:nth-child(even) {
+            background-color: #ffeecc;
+        }
+    </style>
+    <style>
+        ul.rover{
+            list-style: square inside url("images/ico/tile_bullet.png");
+        }
+
+    </style>
+</head><!--/head-->
+
+<body>
+	   <header id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="idea.html">Idea</a></li>
+                        <li class="dropdown"><a href="approach.html">Approach<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a class="active" href="approach.html">Overview</a></li>
+                                <li><a href="origami-approach.html">Origami Design</a></li>
+                                <li><a href="beads-approach.html">Dyna Beads Setup</a></li>
+                                <li><a href="liposome-approach.html">Liposome Preparation</a></li>
+                                <li><a href="conjugation-approach.html">Nanorover Assembly</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="results.html">Results</a></li>
+                        <li class="dropdown active"><a>Materials &amp; Methods<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a href="origami-protocol.html">DNA Origami</a></li>
+                                <li><a href="beads-protocol.html">Dyna Beads</a></li>
+                                <li><a href="liposome-protocol.html">Liposomes</a></li>
+                                <li><a href="assembly-protocol.html">Nanorover Assembly</a></li>
+                                <li class="active"><a href="equipment.html">Imaging</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Team</a></li>
+                        <li><a href="outreach.html">Gallery</a></li>
+                        <li><a href="sponsors.html ">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row text-center">
+                    <h1><b>Imaging Protocols</b></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#page-breadcrumb-->
+                  
+    <section id="blog-details" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-7">
+                    <h2><b>Table of contents:</b></h2>
+                    <ul>
+                        <li><a href="#1"><b>1 Origami Folding</b></a>
+                            <ul>
+                                <li><a href="#1.1">1.1 6-Helix Bundle Folding Reaction</a></li>
+                                <li><a href="#1.2">1.2 Annealing Protocol</a> </li>                         
+                            </ul>
+                        </li>
+                        <li><a href="#2"><b>2 Modification of 6HB (Streptavidinylation)</b></a>  
+                        </li>
+                        <li><a href="#3"><b>3 Purification Techniques</b></a></li>
+                            <ul>
+                                <li><a href="#3.1">3.1 Agarose Gel Electrophoresis</a></li>
+                                <li><a href="#3.2">3.2 Amicon Filtration</a> </li>
+                                <li><a href="#3.3">3.3 Magnetic Bead Purification</a></li>
+                           </ul>
+                        <li><a href="#4"><b>4 Measurements &amp; Imaging</b></a>
+                            <ul>
+                                <li><a href="#4.1">4.1 DLS (Dynamic Light Scattering)</a></li>
+                                <li><a href="#4.2">4.2 UV vis</a> </li>
+                                <li><a href="#4.3">4.3 Wide-field Microscopy</a></li>
+                                <li><a href="#4.4">4.4 SEM (Scanning Electron Microscopy)</a></li>
+                                <li><a href="#4.5">4.5 STORM (Stochastic Optical Reconstruction Microscopy)</a></li>
+                                <li><a href="#4.6">4.6 Cryo-TEM (Cryo-Transmission Electron Microscopy )</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#5"><b>5 Bursting &amp; Uptake of the liposomes</b></a>
+                            <ul>
+                                <li><a href="#5.1">5.1 Molar ratios for bursting</a></li>
+                                <li><a href="#5.2">5.2 Molar ratios for uptake</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#6"><b>6 Buffers &amp; Media</b></a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="post-content overflow">
+                        <h1 id = "1" ><b>1 DNA Origami Folding</b></h1>
+                        <h2 id= "1.1"><b>1.1 6HB Folding Reaction</b></h2>
+                        <p> 
+                            <h2>Materials:</h2>
+                            <ul class = "rover">
+                                <li>DNA LoBind eppendorf tubes</li> 
+                                <li>Folding buffer (12 mM MgCl<sub>2</sub> + 5 mM TE)</li>
+                                <li>MiliQ water</li>
+                            </ul>
+                                
+                            <ol type="a">
+                                <li>DNA Origami folding protocol was derived from<a href="http://pubs.acs.org/doi/abs/10.1021/acsnano.6b01537"> Gür et. al.</a> to fold the 6HB design.</li>
+                                <li>8064 bp long scaffold strand along with staple strands were used in a ratio of 1:10.</li>
+                                <li>These staple strands included:
+                                    <ul class="rover">
+                                        <li>Core staple strands</li>
+                                        <li>Handle sequences for the attachment of liposomes</li>
+                                        <li>For attachment to magnetic beads: biotinylated oligo</li>
+                                    </ul>
+                                    <img src="images/protocols/staples.png" class="push-right">
+                                </li>
+                                <li>The following mixture was prepared for the folding of 6HB (400 µl) and placed in a thermal cycler:
+                                    <br>
+                                <table class="info" style="width:90%">
+                                    <tr class="info">
+                                        <th class="info"></th>
+                                        <th class="info">MiliQ H<sub>2</sub>O</th>
+                                        <th class="info">TE buffer </th>   
+                                        <th class="info">MgCl<sub>2</sub> </th>   
+                                        <th class="info">Scaffold </th>    
+                                        <th class="info">Handle Staples </th>   
+                                        <th class="info">Core Staples </th>
+                                        <th class="info">Capture Oligo</th>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Stock Concentration</td>
+                                        <td class="info">-</td>
+                                        <td class="info">50 mM (10x)</td> 
+                                        <td class="info">120 mM</td>  
+                                        <td class="info">100 nM</td>  
+                                        <td class="info">4.16 µM</td>                                       
+                                        <td class="info">704 nM</td>
+                                        <td class="info">1000 nM</td>   
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Final Concentration</td>
+                                        <td class="info">-</td>
+                                        <td class="info">5 mM (1x)</td> 
+                                        <td class="info">12 mM</td>  
+                                        <td class="info">10 nM</td>  
+                                        <td class="info">100 nM</td> 
+                                        <td class="info">100 nM</td>                                         
+                                        <td class="info">100 nM</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Volume (μL)</td>
+                                        <td class="info">173.6</td>
+                                        <td class="info">40</td> 
+                                        <td class="info">40</td>  
+                                        <td class="info">40</td> 
+                                        <td class="info">9.6</td> 
+                                        <td class="info">56.8</td>                                          
+                                        <td class="info">40</td>
+                                    </tr>
+                                </table>
+                                <br>
+                            </li>
+                        </ol>
+                        <hr><!--end of guvs-->
+                        <h2 id= "1.2"><b>1.2 Annealing protocol</b></h2>
+                        <h2>Materials:</h2>
+                            <ul class = "rover">
+                                <li>DNA LoBind eppendorf tubes</li> 
+                                <li>Thermal cycler (Biorad C1000 Touch)</li>
+                            </ul>
+                                
+                        <h2>Procedure</h2>
+                            <ol type="a">
+                                <li>Heating up to 80°C</li>
+                                <li>Cooling to 65°C at the rate of 1°C per minute</li>
+                                <li>Once at 65°C, lower the temperature to 20°C at the rate of 1°C per 20 minutes</li>
+                                <li>Cool down to 4°C</li>
+                                <li>The DNA origami can be stored at this temperature in DNA LoBind tubes</li>
+                            </ol>
+                        <hr><!--end of luvs-->
+                        <h1 id= "2"><b>2 Modification of 6HB</b></h1>
+                            <h2>Materials needed:</h2>
+                                        <ul class = "rover">
+                                            <li> 1.5 mL Eppendorf tubes</li>
+                                            <li> Pipettes</li>
+                                            <li> Pipette Tips</li>
+                                            <li> 1M tris(2-carboxyethyl)phosphine (TCEP)</li>
+                                            <li> Single-stranded DNA 5'ThioMC6-D/TTTTTTTCTTTGTTTCTTT</li>
+                                            <li> Liquid nitrogen</li>
+                                            <li> Biotin-maleimide</li>
+                                            <li> MilliQ Water</li>
+                                            <li> N-Methyl-2-pyrrolidone (NMP)</li>
+                                            <li> 0.1 mM KH2PO4 (Potassium Dihydrogen Phosphate) buffer</li>
+                                            <li> Vortex mixer</li>
+                                            <li> Centrifuge</li>
+                                            <li> Sample Rotator
+                                            <li> Ultra Performance Liquid Chromatography (UPLC) machine</li>
+                                            <li> Mass Spectrometer</li>
+                                            <li> Speed vacuum
+                                        </ul>
+                                    <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li> Ensure that all Eppendorf tubes and pipette tips are all low-bind and low-retention respectively</li>
+                                        <li> Pipette 200 μL of 100 μM ssDNA for modification</li> 
+                                        <li> Prepare a three-fold excess of 1 M TCEP</li>
+                                        <li> Dilute the TCEP sample to 1:100</li>
+                                        <li> Add 6 μL of TCEP to the DNA</li>
+                                        <li> Let the sample incubate at room temperature for 30 minutes</li>
+                                        <li> Dissolve 1 mg of biotin-maleimide in 1 mL NMP</li>
+                                        <li> Add 90.3 μL of dissolved biotin-maleimide and add it to the DNA</li>
+                                        <li> Check the pH of the sample and make sure it is approximately 7.2</li>
+                                        <li> Add 10 μL of 0.1 mM potassium dihydrogen phosphate buffer at a time until pH reaches 7.2</li>
+                                        <li> Place sample in a rotator overnight</li>
+                                        <li> Run UPLC and Mass Spectrometry on a 10μL aliquot of the sample</l>
+                                        <li> If product is obtained, purify the sample using High Performance Liquid Chromatography (HPLC) and place the sample in a speed vacuum set at 0.1 mbar</li>
+                                    </ol>
+
+                                <hr><!--end of peptide synthesis-->
+                                <h1 id = "3" ><b>3 Purification</b></h1>
+                                <h2 id = "3.1"><b>3.1 Agarose Gel Electrophoresis</b></h2>
+                                <h2>Materials:</h2>
+                                <ul class="rover">
+                                    <li>1 kb ladder (GeneRuler 1 kb Plus DNA Ladder, Thermo Scientific) </li>
+                                    <li>DNA grade agarose</li>
+                                    <li>SYBR® Safe DNA Gel stain (Life technologies)</li>
+                                    <li>10x TBE</li>
+                                </ul>
+                                   <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li>0.75 % Agarose gel was prepared for the purification of DNA-origami</li>
+                                        <li>Take 0.9 g of Agarose in a Sybr-safe beaker</li>
+                                        <li>Add 6 ml of 10x TBE buffer</li>
+                                        <li>Add remaining water to make the total volume 120 ml </li>
+                                        <li>Microwave for 3-3:30 min </li>
+                                        <li>Add 1.2 ml of 1.2 mM MgCl<sub>2</sub> (Tip: Try to pour it on the sides of the beaker to minimize the temperature difference)</li>
+                                        <li>Use 12 µl of the dye (Sybr Safe) and add it to the beaker (in a spiral fashion)</li>
+                                        <li>Slowly pour the solution in the cast with a comb and use a pipetting tip to move any bubbles aside</li>
+                                        <li>Let the gel cool for about 20-30 minutes</li>
+                                    </ol>                      
+                                <hr><!--end of biotinylation-->
+                                <h2 id = "3.2"><b>3.2 Amicon Filtration</b></h2>
+                                <h2>Materials:</h2>
+                                <ul class="rover">
+                                    <li>1x Folding Buffer (12 mM MgCl<sub>2</sub>, 1x TE)</li>
+                                    <li>100 kD Amicon filter </li>
+                                </ul>
+                                   <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li>Amicon filtration was performed to get rid of the excess staples after the folding reaction</li>
+                                        <li>Incubate amicon filters with 1xFB overnight</li>
+                                        <li>Wash with 1xFB twice at 14x G for 2 minutes</li>
+                                        <li>Add 50 µl sample + 400 µl 1xFB, centrifuge for 2 minutes at 14x G</li>
+                                        <li>Wash 6 times with 450 µl FB</li>
+                                        <li>Invert and run at 1x G for 2 minutes </li>
+                                        <li>High concentration was achieved and almost no staple strands were remaining after purification</li>
+                                    </ol>                      
+                                <hr><!--end of biotinylation-->
+                                <h2 id = "3.3"><b>3.3 Magnetic Bead Purification</b></h2>
+                                <h2>Materials:</h2>
+                                <ul class="rover">
+                                    <li>Pierce Streptavidin Magnetic Beads (Thermo Fisher-Pierce)</li>
+                                    <li>DynaMag™-2 Magnet (Thermo Fisher-Scientific)</li>
+                                    <li>Washing buffer (1x PBS, 12 mM MgCl<sub>2</sub>), 0.5% TWEEN</li>
+                                </ul>
+                                   <h2>Procedure:</h2>
+                                    <ol type="a">
+                                        <li>Biotinylated staple strands were used to bind the DNA-origami to streptavidin functionalized magnetic beads</li>
+                                        <li>This method was used to remove excess staples and streptavidin in the 6HB solution</li>
+                                        <li>Mix together the magnetic beads and biotinylated 6HB with impurities</li>
+                                        <li>Let the mixture incubate overnight in a shaker</li>
+                                        <li>Wash the beads after placing them on a magnetic stand to remover the unbounded impurities using the washing buffer</li>
+                                        <li>Add 200 nM of the displacement staples and incubate for one hour while mixing gently</li>
+                                        <li>Recover the 6HB by placing the eppendorf on the magnetic stand</li>
+                                    </ol>                      
+                                <hr><!--end of biotinylation-->
+                                <br>
+                                <h1 id = "4" ><b>4 Quantification of DNA-Origami</b></h1>
+                                    <ol type="a">
+                                        <li> The concentrations of the purified DNA origami structures were determined by measuring the absorbance at 260 nm using a spectrophotometer (Implen NanoPhotometer® P360)</li>
+                                        <li> Value generated by photometer: mass concentration (µg/ml)</li>
+                                        <li> Molar concentration of the sample can be measured by knowledge of the scaffold length (8064 bp in this case) and mass of one bp (660 g/mol)</li>
+                                        <li>Thus, molar concentration = mass concentration (µg/ml) / (8064 * 660 g/mol)</li>
+                                    </ol>                      
+                                <hr>
+                                <h2 id = "5.2" ><b>5.2 TEM Imaging </b></h2>
+                                    <ol type="a">
+                                        <li> Plasma etching (SPI Plasma Prep™ III Plasma Etcher) was performed on carbon-coated copper grids (Plano GmbH)</li>
+                                        <li>10 µL of sample was placed on each grid for 5-10 min and then absorbed on kimtech wipes</li>
+                                        <li>The samples containing DNA were stained with 4 µl of 2% uranyl acetate (+ 25 mM sodium hydroxide) for 90 seconds before removing it again.</li>
+                                        <li>The grids were alloweed to dry for 15 minutes and placed in the grid holder for storage</li>
+                                    </ol>                      
+                                <hr><!--end of dls-->
+                                <h2 id = "5.2"><b>5.2 Cryo-TEM</b></h2>
+                                    <ol type = "a">
+                                        <li>For frozen hydrated specimen preparation, 2µl of sample was deposited on a holey carbon support film attached to a copper grid.</li>
+                                        <li>The liquid film was thinned by blotting for 0.5 sec and frozen rapidly in liquid ethane.</li>
+                                        <li>After rapid freezing, the sample was loaded to a Gatan cryo transfer holder keeping temperature below -130°C in order to prevent ice crystallization.</li>
+                                        <li>TEM inspection was done in ZEISS LIBRA 120, energy filtered images were recorded under low dose electron irradiation conditions.</li>
+                                        <li>Samples were kept below -130°C during the inspection</li>
+                                    </ol>                   
+                                <hr><!--end of uv-->
+                                
+                                    <br>
+
+
+
+                            </p>
+                    </div>
+                </div> 
+
+            </div>
+
+
+
+
+                                
+        </div>
+                            
+    </section>
+    <!--/#blog-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center" style="color: black;">
+                <table align="center">
+                <tr>
+                    <td> <img src="images/home/robotito.png"> </td>
+                    <td>  <h3>&copy; I,Nanobot 2016. All Rights Reserved Created by team I,Nanobot TU Dresden </h3> 
+                    <a href="https://www.facebook.com/teaminanobot"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/inanobot2016"><i class="fa fa-twitter"></i></a>                       
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

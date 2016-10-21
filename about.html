@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Team | I, Nanobot</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/tile.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/tile.png">
+    <style type="text/css">
+        .modal-body {
+       background-image: url(images/404-bg.png);
+    }
+    </style>
+    <style type="text/css">
+     ul.rover{
+            list-style: square inside url("images/ico/tile_bullet.png");
+        }
+
+
+    /* Image map styles */
+    .imageMap {width:100%; position:relative; margin:20px 0 100px 0;}
+    .imageMap img {display:block; width:100%; border-radius:20px;}
+    .imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0; visibility:hidden;}
+    .imageMap a {display:block; position:absolute; background:#000; z-index:100; opacity:0; filter: alpha(opacity=00);}
+    .imageMap a.p1 {left:11%; top:30%; width:10%; height:34%;}
+    .imageMap a.p2 {left:22%; top:33%; width:8%; height:30%;}
+    .imageMap a.p3 {left:30%; top:28%; width:7%; height:20%;}
+    .imageMap a.p4 {left:38%; top:33%; width:9%; height:30%;}
+    .imageMap a.p5 {left:47%; top:24%; width:7%; height:20%;}
+    .imageMap a.p6 {left:54%; top:31%; width:7%; height:35%;}
+    .imageMap a.p7 {left:65%; top:26%; width:8%; height:17%;}
+    .imageMap a.p8 {left:73%; top:31%; width:10%; height:25%;}
+    .imageMap a + p {position:absolute; left:0%; top:102%; width:100%; color:#000; display:none;  opacity:0;}
+
+    .imageMap:hover .hotspots {visibility:visible;}
+    #info .imageMap p strong {display:block; padding:0; margin:0; font: bold 25px/30px 'latolight',sans-serif; color:#069;}
+    #info .imageMap p {padding:0; margin:0; font: normal 18px/22px 'latomedium', sans-serif; color:#444;}
+
+    .imageMap .hotspots div:hover p {display:block;}
+    .imageMap .hotspots div:hover a {background:#fff; border-radius:200px; z-index:100; opacity:0.0;}
+    </style>
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="idea.html">Idea</a></li>
+                        <li class="dropdown"><a href="approach.html">Approach<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a class="active" href="approach.html">Overview</a></li>
+                                <li><a href="origami-approach.html">Origami Design</a></li>
+                                <li><a href="beads-approach.html">Dyna Beads Setup</a></li>
+                                <li><a href="liposome-approach.html">Liposome Preparation</a></li>
+                                <li><a href="conjugation-approach.html">Nanorover Assembly</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="results.html">Results</a></li>
+                        <li class="dropdown"><a>Materials &amp; Methods<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                            <ul role="menu" class="sub-menu">                                
+                                <li><a href="origami-protocol.html">DNA Origami</a></li>
+                                <li><a href="beads-protocol.html">Dyna Beads</a></li>
+                                <li><a href="liposome-protocol.html">Liposomes</a></li>
+                                <li><a href="assembly-protocol.html">Nanorover Assembly</a></li>
+                                <li><a href="equipment.html">Equipment</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="about.html">Team</a></li>
+                        <li><a href="outreach.html">Gallery</a></li>
+                        <li><a href="sponsors.html ">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12 text-center">
+                            <h1><b>Meet the team</b></h1>
+                            <h3 class="title-description">We are a team of international students from TU Dresden</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/#action-->
+    <div class="container">
+        <div class="imageMap" aria-haspopup="true">
+            <img src="images/portfolio/team.png" alt="" />
+            <div class="hotspots">
+                <div title="Renat">
+                    <a href=# class="p1" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#renatData"></a>
+                </div>
+                <div title="Judit">
+                    <a href=# class="p2" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#juditData"></a>
+                </div>
+                <div title="Dmitry">
+                    <a href=# class="p3" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#dmitryData"></a>
+                </div>
+                <div title="Foram">
+                    <a href=# class="p4" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#foramData"></a>
+                </div>
+                <div title="Shikhar">
+                    <a href=# class="p5" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#shikharData"></a>
+                </div>
+                <div title="Yara">
+                    <a href=# class="p6" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#yaraData"></a>
+                </div>
+                <div title="Timothy">
+                    <a href=# class="p7" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#timothyData"></a>
+                </div>
+                <div title="Juliana">
+                    <a href=# class="p8" rel="nofollow" aria-haspopup="false"class="thumbnail" data-image-id="" data-toggle="modal" data-title="This is my title" data-target="#julianaData"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="renatData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Renat Nigmetzianov</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/renat.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li> From: Kazan, Russia</li>
+                          <li> The simulation dude! THE Goud! Will keep modifying things until he's satisfied. Always shows both good and bad sides of any problem. There is nothing but pure hockey soul in him!</li>
+                          <li> Nickname: <b>Goud</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal fade" id="juditData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Judit Clopés Llahí</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/judit.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li> From: Barcelona, Catalonia</li>
+                          <li> The Queen of nicknames and most artistic person who can create amazing pieces on the fly! She is extremely helpful, diligent hard-worker, and her illustrations with GIMP brings life into our project.</li>
+                          <li> Nickname: <b>Helia Sun</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="modal fade" id="shikharData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Shikhar Kumar Gupta</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/shikhar.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li>From: Rae Bareli, India</li>
+                          <li>Amazing team leader and inspiring person, walking encyclopedia, and keeper of good chemistry of the team. An easy-going man you can always have fun with and is the King of Maya!</li>
+                          <li> Nickname: <b>Entropy</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="modal fade" id="foramData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Foram Joshi</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/foram.png">
+                </div>
+                <div class="modal-footer">
+                    <div id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li>From: Ahmedabad, India</li>
+                          <li>First lady and web coding expert who is calm, wise, but always eager and optimistic. She is keen on finding the possibilites and flaws of ideas. Known to make the most INCREDIBLE homemade Indian food and Faluda!</li>
+                          <li> Nickname: <b>First Lady</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="modal fade" id="dmitryData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Dmitry Belyaev</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/dmitry.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li> From: Moscow, Russia</li>
+                          <li> The DJ and entertainment of I, Nanobot. He likes to make sure we're having fun during our meetings. Has a bright future in stand-up comedy. Korova man...This man loves his korovas.</li>
+                          <li> Nickname: <b>Karova</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="timothyData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Timothy Esch</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/timothy.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li>From: Port Huron, Michigan</li>
+                          <li> This solid squirrel comes with a touch of Yoda and an exponential skill level of Blender. Often found to be reassuring others when under pressure: "Everything is going to be good."</li>
+                          <li> Nickname: <b>Solid</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="yaraData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Yara Alsaadawi</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/yara.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li> From: Gaza, Palestine</li>
+                          <li>Kid of the team who brings fun and handles difficult scientific stuff at the same time. Truly carries a big heart for others and serves as our video chief editor. Anime? No problem! She’ll hook you up with awesome anime!</li>
+                          <li> Nickname: <b>Panda</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="julianaData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title">Juiliana Hilliard</h4>
+                </div>
+                <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio/juliana.png">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-justify" id="image-gallery-caption">
+                      <p>
+                        <ul class = "rover">
+                          <li> From: Vienna, Austria</li>
+                          <li> This business lady guru brings competitiveness, productivity, and yet awesome and awkward at the same time. More remarkable is her ability to make anything fun out of nothing. Currently undefeated in Foosball.</li>
+                          <li> Nickname: <b>Jules</b></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="wow fadeInLeft text-center" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1><b>Our mentors</b></h1>
+                            <h3 class="title-description">However, we could not do anything without support of our mentors</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/portfolio/braun.png" alt="">
+                        </div>
+                        <h3><b>Dr. Hans-Georg Braun</b></h3>
+                        <p>Associate Professor TU Dresden,<br> Leibniz Instititute of Polymer Research</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/portfolio/lars.png" alt="">
+                        </div>
+                        <h3><b>Dr. Thorsten-Lars Schmidt</b></h3>
+                        <p>	Group leader DNA Chemistry,<br> Cluster of Excellence Center for Advancing Electronics Dresden</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/portfolio/zhang.png" alt="">
+                        </div>
+                        <h3><b>Dr. Yixin Zhang </b></h3>
+                        <p>Professor for Biomolecular Interaction<br>
+                            Group leader at BCUBE Center for Molecular Bioengineering</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/portfolio/lars.png" alt="">
+                        </div>
+                        <h3><b>Dr. Lars Renner</b></h3>
+                        <p> Institute for Materials Science and Max Bergmann Center of Biomaterials</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/portfolio/yavuz.png" alt="">
+                        </div>
+                        <h3><b>Yavuz Oguz Uca</b></h3>
+                        <p>Post-graduate Mentor</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/portfolio/alvin.png" alt="">
+                        </div>
+                        <h3><b>Dr. Alvin Thomas</b></h3>
+                        <p>Post-doctorate Mentor<br>
+                        Post Doc at BCUBE Center for Molecular Bioengineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="text-center">
+                            <h1><b>Special thanks</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div id="image-gallery-caption">
+        <ul>
+            <li><h2 class="text-center">Scientific discussions and experiments</h2></li>
+            <br>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Michael Schlierf</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Stefan Diez</td>
+                </tr>
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Carsten Werner</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Francis Stewart</td>
+                </tr>
+            </table>
+            <br>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Jörg Opitz </td>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. David Smith </td>
+                    <td> <img src="images/ico/tile_bullet.png"> Dr. Ralf Seidel</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Dr. Ivo Sbalzarini </td>
+                    <td><img src="images/ico/tile_bullet.png"> Dr. Alf Honigmann </td>
+                    <td><img src="images/ico/tile_bullet.png"> Dr. James Saenz </td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Dr. Friedrich Schwarz  </td>
+                    <td><img src="images/ico/tile_bullet.png"> Stephen Enos </td>
+                    <td><img src="images/ico/tile_bullet.png"> Kristin Hunold</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Helena Andrade </td>
+                    <td><img src="images/ico/tile_bullet.png"> Abhinaya Anandamurugan </td>
+                    <td><img src="images/ico/tile_bullet.png"> Simon Ollmann</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Olesandr Ostrenko  </td>
+                    <td><img src="images/ico/tile_bullet.png"> Robert Müller </td>
+                    <td><img src="images/ico/tile_bullet.png"> Ulrik Guenther</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Philip Gröger </td>
+                    <td><img src="images/ico/tile_bullet.png"> Mohsen Samadi Khoshkhoo </td>
+                    <td><img src="images/ico/tile_bullet.png"> Celina Love</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ico/tile_bullet.png"> Fatih Nadi Gür </td>
+                    <td><img src="images/ico/tile_bullet.png"> Jingjing Ye </td>
+                    <td><img src="images/ico/tile_bullet.png"> Nayan Agarwal</td>
+                </tr>
+            </table>
+
+            <br>
+            <li><h2 class="text-center">Audio Recording</h2></li>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Nicholas Dennison</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Lorenz Holland-Moritz</td>
+                </tr>
+            </table>
+
+            <br>
+            <li><h2 class="text-center">German Translations</h2></li>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Anna Kempe</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Franziska Hoppe</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Max Stöber</td>
+                </tr>
+            </table>
+
+            <br>
+            <li><h2 class="text-center">Long Night of Science</h2></li>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Luman Haris</td>
+                    <td> <img src="images/ico/tile_bullet.png"> Deniz Ragipoglu</td>
+                </tr>
+            </table>
+            <br>
+
+            <li><h2 class="text-center">Finances</h2></li>
+            <table align="center">
+                <tr>
+                    <td> <img src="images/ico/tile_bullet.png"> Barbara Lindemann</td>
+                </tr>
+            </table>
+        </ul>
+    </div>
+    <!--/#action-->
+
+    
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center" style="color: black;">
+                <table align="center">
+                <tr>
+                    <td> <img src="images/home/robotito.png"> </td>
+                    <td>  <h3>&copy; I,Nanobot 2016. All Rights Reserved Created by team I,Nanobot TU Dresden </h3> 
+                    <a href="https://www.facebook.com/teaminanobot"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/inanobot2016"><i class="fa fa-twitter"></i></a>                       
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
