@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Dyna beads: Approach | I, Nanobot</title>
+    <title>Dynabeads: Approach | I, Nanobot</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
@@ -22,6 +22,29 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/tile.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/tile.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/tile.png">
+        <style>
+        table.info {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td.info, th.info {
+            border: 1px solid #ffeecc;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr.info:nth-child(even) {
+            background-color: #ffeecc;
+        }
+    </style>
+    <style>
+        ul.rover{
+            list-style: square inside url("images/ico/tile_bullet.png");
+        }
+
+    </style>
+
 </head><!--/head-->
 
 <body>
@@ -49,7 +72,7 @@
                             <ul role="menu" class="sub-menu">                                
                                 <li><a class="active" href="approach.html">Overview</a></li>
                                 <li><a href="origami-approach.html">Origami Design</a></li>
-                                <li class="active"><a href="beads-approach.html">Dyna Beads Setup</a></li>
+                                <li class="active"><a href="beads-approach.html">Dynabeads®Setup</a></li>
                                 <li><a href="liposome-approach.html">Liposome Preparation</a></li>
                                 <li><a href="conjugation-approach.html">Nanorover Assembly</a></li>
                             </ul>
@@ -58,10 +81,9 @@
                         <li class="dropdown"><a>Materials &amp; Methods<i class="fa fa-angle-down" style="font-size:18px"></i></a>
                             <ul role="menu" class="sub-menu">                                
                                 <li><a href="origami-protocol.html">DNA Origami</a></li>
-                                <li><a href="beads-protocol.html">Dyna Beads</a></li>
+                                <li><a href="beads-protocol.html">Dynabeads</a></li>
                                 <li><a href="liposome-protocol.html">Liposomes</a></li>
                                 <li><a href="assembly-protocol.html">Nanorover Assembly</a></li>
-                                <li><a href="equipment.html">Equipment</a></li>
                             </ul>
                         </li>
                         <li><a href="about.html">Team</a></li>
@@ -80,7 +102,7 @@
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12 text-center">
-                            <h1><b>Magentic Beads</b></h1>
+                            <h1><b>Magnetic Beads or DynaBeads</b></h1>
                         </div>
                     </div>
                 </div>
@@ -91,13 +113,14 @@
 
     <section id="services">
         <div class="container">
-            <div class="row">
+            <div class="row text-center">
+                <iframe height="400" src="https://sketchfab.com/models/fb367526313f44b8ac89073e1d1aafd5/embed?ui_controls=1&amp;ui_watermark=0&amp;ui_stop=0&amp;scrollwheel=1&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" allowTransparency="true"></iframe>
                 <div class="text-justify padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
                         </div>
-                        <p>Invented and defined first in 1976 as microbeads by John Ugelstad, today dynabeads are the spherical particles usually made up with a silicon core and covered with a layer of paramagnetic material.<sup>[<a href="#ref">1</a>]</sup> Namely, they are not initially magnetized, but need an extra force to become magnets. Beads diameter typically lies in the range from 1 to 5 micrometer often found in many biological applications as magnetic nanoswimmers, e.g. isolation of small components such as proteins and peptides.</p>
-                        <p>Dynabeads can be commercially purchased and functionalized afterwards. Every bead has a superparamagnetic material coated with a thin polymer shell composed of highly cross-linked polysterine with magnetic material precipitated in pores evenly distributed throughout the particle. The surface chemistry of dynabeads is hydrophilic which confers them low non-specific binding and covalent amide bond formation to proteins.<sup>[<a href="#ref"> 2</a>, <a href="#ref"> 3 </a>]</sup></p>
+                        <p>Invented and defined first in 1976 as microbeads by John Ugelstad, today Dynabeads®are the spherical particles usually made up with a silicon core and covered with a layer of paramagnetic material.<sup>[<a href="#ref">1</a>]</sup> Namely, they are not initially magnetized, but need an extra force to become magnets. Beads diameter typically lies in the range from 1 to 5 micrometer often found in many biological applications as magnetic nanoswimmers, e.g. isolation of small components such as proteins and peptides.</p>
+                        <p>Dynabeads®can be commercially purchased and functionalized afterwards. Every bead has a super-paramagnetic material coated with a thin polymer shell composed of highly cross-linked polysterine with magnetic material precipitated in pores evenly distributed throughout the particle. The surface chemistry of Dynabeads®is hydrophilic which confers them low non-specific binding and covalent amide bond formation to proteins.<sup>[<a href="#ref"> 2</a>, <a href="#ref"> 3 </a>]</sup></p>
                     </div>
                 </div>
             </div>
@@ -114,13 +137,71 @@
               </div>
                 <div class="col-sm-8 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                 <h2>Step 1</h2>
-                <P>The motor is moved in 3-dimensions within a microfluidic channel using a magnetic particle controller</P>
+                <P>Three intensity signals -one for each pair of Helmholtz coils- are simulated in the computer using a homemade LabVIEWTM script. </P>
+                <img src="images/approach/software.png" class="img-responsive" alt="">
+                <p>The script generates three simulated continuous sinusoidal signals as an output, from which the user can control the amplitude, the frequency and the phase sent to each coil. These parameters can be modified during the measurement.</p>
              </div>
           </div>
            <div class="single-features">
-                <div class="col-sm-8 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2>Step 2</h2>
-                    <P>The motor and the liposome link with each other upon biotin/streptavidin binding</P>
+                <div class="col-sm-8 col-sm-offset-1 text-justify wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2 class="align-right">Step 2</h2>
+                    <P>A 3-dimensional magnetic field is generated by a 3D Helmholtz Coils System (3D-HCS), consisting of three pairs of coils oriented in the three spatial directions (see Fig. below <sup>[<a href="#ref">2</a>]</sup>).
+                    <img src="images/approach/coil1.png" class="img-responsive" alt="">
+                    The 3D-HCS has the following specifications:
+
+                        <br>
+                        <table class="info" style="width:80%">
+                                    <tr class="info">
+                                        <th class="info">Coil</th>
+                                        <th class="info">Smallest</th>
+                                        <th class="info">Medium</th>                                        
+                                        <th class="info">Biggest</th>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Diameter of the coil</td>
+                                        <td class="info">56 mm</td>
+                                        <td class="info">70 mm</td>
+                                        <td class="info">92 mm</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Distance between parallel coils</td>
+                                        <td class="info">28 mm</td>
+                                        <td class="info">41 mm</td>
+                                        <td class="info">46 mm</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Turns per coil</td>
+                                        <td class="info">349</td>
+                                        <td class="info">362</td>
+                                        <td class="info">370</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td class="info">Length of wire per coil</td>
+                                        <td class="info">70,2 m</td>
+                                        <td class="info">80,9 m</td>
+                                        <td class="info">117,4 m</td>
+                                    </tr>                                                                
+                                </table>
+                                <br>
+                    The intensities from each coil are controlled by the computer, which is connected to a DAQmx card from National Instruments (NI USB-6259) digital-analog converter in order to transform the simulated signal into a physical intensity. This device has the following characteristics:
+                    <ul class="rover">
+                        <li>32 analog inputs (16-bit); 1.25 MS/s single-channel (1 MS/s aggregate)</li>
+                        <li>4 analog outputs (16-bit, 2.8 MS/s); 48 digital I/O (32 clocked); two 32-bit counters</li>
+                    </ul>                    
+                    Each pair of coils was connected to a different analog output channel so that the signal parameters of each can be controlled independently.
+                    The calibration from intensity to magnetic field was performed for each coil by evaluating the average of  maximum values for the generated magnetic field in the center of the system with a Hall sensor.<sup>[<a href="#ref">2</a>]</sup> The calibration curves are depicted in the figure below.
+                    <br>
+                    <img src="images/approach/beads_graph.png" class="img-responsive" alt="">
+                    For applied intensities larger than approximately 35 mA, the system loses its linear behavior. The calibration has been calculated in the linear regime.
+                    <ul class="rover">
+                        <li>X Coil: B(mT) = 0.29 mT/mA * I(mA) + 0.13 mT</li>
+                        <li>Y Coil: B(mT) = 0.30 mT/mA * I(mA) + 0.50 mT</li>
+                        <li>Z Coil: B(mT) = 0.13 mT/mA * I (mA) + 0.01 mT</li>
+                    </ul>
+                    The physical signals can be monitored during the operation with an oscilloscope. The system is equipped with a microscope and a camera for the visualization and the recording of the samples, respectively.
+                    After long operation times, the system may warm up, especially for high intensities. This fact must be taken into account, since the increase in the temperature may affect the sample.
+
+                    </P>
                 </div>
                 <div class="col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                     <img src="images/approach/beads_hardware.png" class="img-responsive" alt="">
@@ -132,13 +213,19 @@
                 </div>
                 <div class="col-sm-8 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                     <h2>Step 3</h2>
-                    <P>The motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptakeThe motor is moved, pulling the liposome into a pool of the selected and labeled small molecule of choice for uptake</P>
+                    <P>Limitations of the setup suggested that simulations could supplement more information on the behavior of the magnetic swimmers under stronger magnetic fields or longer time measurements. Furthermore, the parameters that define different characteristics of the medium can be easily modified in a simulation.</p>
+                    <p>Simulations were carried out using Comsol. With this software, it was possible to visualize and quantify the magnetic field generated by a three pairs of Helmholtz coils system.</P>
                 </div>
             </div>
             <div class="single-features">
-                 <div class="col-sm-8 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                     <h2>Step 4</h2>
-                     <P>The motor and liposome are moved into a peptide solution, which causes the membrane to burst and release contents</P>
+                 <div class="col-sm-8 col-sm-offset-1 text-justify  wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <h2 class="align-right">Step 4</h2>
+                     <P>The characteristics of the movement of the magnetic swimmers depend on many factors, including the geometry and the magnetic properties of the swimmer, the characteristics of the medium, among others. For the case of Dynabeads®, it was demonstrated in <sup>[<a href="#ref">7</a>]</sup> that they assemble in rods and rotate under the influence of an oscillating magnetic field. Such assembly and rotational motion of Dynabeads® in rods was observed and measured (see figure below).</P>
+                     <br>
+                    <img src="images/results/dyna1.gif" class="img-responsive" alt="">
+                     <br>
+                     <p>Directed movement for Dynabeads® of 2.8 μm has been also demonstrated.<sup>[<a href="#ref">8</a>]</sup> Directed movement of the Dynabeads®suspension has not been observed in these experiments due to limitations in the setup used, such as an insufficient intensity of the magnetic field.</p>
+                     <p>Long measurement times, as well as warming up of the coils for high intensities, may cause the drying of the sample. Once this happens, a directed movement of the suspended particles towards the boundaries of the droplet due to the coffee stain effect <sup>[<a href="#ref">6</a>]</sup> becomes more important than the motion induced by the magnetic field.</p>
                  </div>
                  <div class="col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                      <img src="images/approach/beads_motion.png" class="img-responsive" alt="">
@@ -167,10 +254,13 @@
                      <p>
                         <ol>
                             <li>https://en.wikipedia.org/wiki/Dynabeads</li>
-                            <li>Master Thesis, Andreea-Ionela TOMITA, 2014, TU Dresden</li>
+                            <li>Tomita, A., “A 3-Helmholtz coils system approach for the study of magnetic swimmers”, Master thesis, Max Bergmann Institute, Dresden 2014.</li>
                             <li>Neurauter, Axl A., et al. "Cell isolation and expansion using Dynabeads®." Cell Separation. Springer Berlin Heidelberg, 2007. 41-73.</li>
-                            <li>What are dynabeads?  ftp://ksph.kz/Food%20Microbiology1/File%20da%20prendere/New%20methods/What%20are%20Dynabeads.doc</li>
-                            <li>Wang, Y., Gao, Y., Wyss, H., Anderson, P., & den Toonder, J. (2013). Out of the cleanroom, self-assembled magnetic artificial cilia. Lab on a Chip, 13(17), 3360-3366.</li>
+                            <li>What are Dynabeads?  ftp://ksph.kz/Food%20Microbiology1/File%20da%20prendere/New%20methods/What%20are%20Dynabeads.doc</li>
+                            <li>Wang, Y., Gao, Y., Wyss, H., Anderson, P., &amp; den Toonder, J. (2013). Out of the cleanroom, self-assembled magnetic artificial cilia. Lab on a Chip, 13(17), 3360-3366.</li>
+                            <li> Deegan, R., et al.,  “Capillary flow as the cause of ring stains from dried liquid drops”, Nature 389, 827-829 (1997)</li>
+                            <li> Ghosh, A., Fischer, P., “Controlled propulsion of artificial magnetic nanostructured propellers” , NanoLetters, Vol. 9, No. 6, 2243-2245, (2009)</li>
+                            <li> Martinez-Pedrero, F., and Tierno, P., “Magnetic propulsion of self-assembled colloidal carpets: efficient cargo transport via a Conveyor-Belt effect”, </li>
                         </ol>
                     </p>
             </div> 
